@@ -1,10 +1,8 @@
 html {
-	background-color: #FFF;
 	height: 100%;
 }
 
 body {
-	background-color: #EEE;
 	margin: 0px;
 	min-height: 100%;
 	float: left;
@@ -14,19 +12,33 @@ body {
 header {
 	background-color: #DDD;
 	width: 100%;
+	position: fixed;
+	z-index: 10;
 }
 
 nav {
-	background-color: #CCC;
 	width: 1000px;
 	margin: 0 auto;
 	text-align: center;
+	display: table;
+	padding-top: 5px;
 }
 
 nav ul {
 	list-style: none;
 	padding: 0;
-	margin: 0px
+	margin: 0px;
+	line-height: 75px;
+} 
+
+nav .left {
+	list-style: none;
+	float: left;
+}
+
+nav .right {
+	list-style: none;
+	float: right;
 } 
 
 nav li {
@@ -45,15 +57,18 @@ nav li a:hover {
 	color: #FFFFFF;
 }
 
-/*
-nav img{
-	width: 50px;
-    height: 50px; 
+nav .menu {
+	float: left;
+	display: block;
+	margin: 0 53px;
 }
-*/
+
+nav .menu img {
+	width: 100px;
+	height: auto;
+}
 
 .container {
-	background-color: #DDD;
 	height: 100%;
 	width: 100%;
 	float: left;
@@ -65,14 +80,11 @@ nav img{
 	width: 1000px;
 	display: table;
 	margin: auto;
+	margin-top: 109px;
 }
 
-.slide {
-	background-color: #BBB;
-	width: 100%;
-	height: 450px;
-	margin-top: 15px;
-	margin-bottom: 15px;
+.cycle-slideshow{
+	z-index: 1;
 }
 
 .portifolio {
@@ -83,17 +95,13 @@ nav img{
 	margin-bottom: 15px;
 }
 
-.portifolio span{
+.portifolio span {
 	margin:auto;
 	display:table;
 	text-align: center;
 }
 
-.portrow{
-
-}
-
-.portoption{
+.portoption {
 	background-color: #AAA;
 	width: 333px;
 	height: 333px;
@@ -101,8 +109,7 @@ nav img{
 	float: left;
 }
 
-
-.blog{
+.blog {
 	background-color: #AAA;
 	float: left;
 	position: relative;
@@ -110,7 +117,7 @@ nav img{
 	height: 600px;
 }
 
-.contato{
+.contato {
 	background-color: #AAA;
 	float:right;
 	position:relative;
@@ -118,7 +125,7 @@ nav img{
 	height: 600px;
 }
 
-footer{
+footer {
 	background-color: #AAA;
 	width:100%;
 	text-align: center;
