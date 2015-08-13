@@ -75,12 +75,11 @@ nav .menu img {
 }
 
 .content {
-	background-color: #CCC;
 	height: 100%;
 	width: 1000px;
 	display: table;
 	margin: auto;
-	margin-top: 109px;
+	margin-top: 114px;
 }
 
 .cycle-slideshow{
@@ -88,7 +87,6 @@ nav .menu img {
 }
 
 .portifolio {
-	background-color: #BBB;
 	width: 100%;
 	height: 100%;
 	float: left;
@@ -101,12 +99,39 @@ nav .menu img {
 	text-align: center;
 }
 
+.portrow{
+	margin-top: 5px;
+	float: left;
+	width: 100%;
+}
+
 .portoption {
 	background-color: #AAA;
-	width: 333px;
-	height: 333px;
+	width: 330px;
+	height: 330px;
 	position: relative;
 	float: left;
+}
+
+.portrow img {
+	width: 330px;
+}
+
+.portoptioncenter {
+	background-color: #AAA;
+	width: 330px;
+	height: 330px;
+	margin-left: 5px;
+	position: relative;
+	float: left;
+}
+
+.portoptionright {
+	background-color: #AAA;
+	width: 330px;
+	height: 330px;
+	position: relative;
+	float: right !important;
 }
 
 .blog {
@@ -132,4 +157,98 @@ footer {
 	float: left;
 	margin-top: 15px;
 	padding: 10px 0px;
+}
+
+/* CSS3 EFFECTS */
+
+a {
+	-moz-transition:color 0.3s ease-out;
+	-webkit-transition:color 0.3s ease-out;
+	-o-transition:color 0.3s ease-out;
+	-ms-transition:color 0.3s ease-out;
+	transition:color 0.3s ease-out;
+}
+
+
+/* CSS3 STYLE GENERIC */
+.view {
+	float: left;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	cursor: default;
+}
+.view .mask, .view .content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+}
+.view img {
+	display: block;
+	position: relative;
+}
+.view a.info {
+	background:url(../img/link.png) center no-repeat;
+	display: inline-block;
+	text-decoration: none;
+	padding:0;
+	text-indent:-9999px;
+	width:20px;
+	height:20px;
+}
+
+.leiamais {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+.line{
+	background-color: #DDD;
+	width: 100%;
+	height: 100px;
+}
+
+/* THIRD EFFECTS */
+
+.third-effect .mask {
+   opacity: 0;
+   overflow:visible;
+   border:165px solid rgba(0,0,0,0.7);
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   box-sizing:border-box;
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+.third-effect a.info {
+   position:relative;
+   top:-10px;
+   right: 10px;
+   opacity: 0;
+   -webkit-transition: opacity 0.5s 0s ease-in-out;
+   -moz-transition: opacity 0.5s 0s ease-in-out;
+   -o-transition: opacity 0.5s 0s ease-in-out;
+   -ms-transition: opacity 0.5s 0s ease-in-out;
+   transition: opacity 0.5s 0s ease-in-out;
+}
+.third-effect:hover .mask {
+   opacity: 1;
+   border:165px solid rgba(0,0,0,0.7);
+}
+.third-effect:hover a.info {
+	opacity:1;
+	-moz-transition-delay: 0.3s;
+	-webkit-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	-ms-transition-delay: 0.3s;
+	transition-delay: 0.3s;
 }
